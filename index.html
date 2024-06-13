@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <!--A responsive website adapts its layout and content to fit various screen sizes and devices, ensuring an optimal user experience on desktops, tablets, and smartphones.'meta' makes the page responsive-->
+        <meta name="viewport" content="with=device-width, initial scale=1.0">
+        <title>MBA Clg Predictor</title>
+        <!--Linking the css file with link tag-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--this and below 2 lines have been pasted from google fonts to change the font style of the navigation tab-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- from 'fone awesome 4 cdn', this helps in importing the cross and the bars in the <700px devices-->
+    </head>
+    <body>
+        <section class="header">
+            <nav> <!--For the purpose of navigation tab-->
+                <a href="index.html"><img src="images/logo.png"></a>
+                <div class="nav-links" id="navLinks"> <!--This dividds the webpage and the 'nav-links' indicates that it will be styled by CSS--> <!--1.class: Allows you to apply the same styles or scripts to multiple elements. Classes can be reused across different elements.2.id: Provides a unique identifier for a single element. IDs must be unique within the document and are often used for specific styling or scripting targets.-->
+                <i class="fa fa-times" onclick="hideMenu()"></i> <!-- from 'fone awesome 4 icons'-->
+                    <ul>
+                        <li><a href="">HOME</a></li> <!--a is an anchor tag to create a hyperlink-->
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">COLLEGES</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+                <div class="text-box">
+                    <h1>Top MBA Colleges</h1>
+                    <p>The top MBA colleges globally are renowned for their rigorous academic programs, distinguished faculty, strong alumni networks, and excellent career opportunities for graduates. Here is a list of some of the top MBA programs as of 2024:<br>
+                    IIM Ahmedabad (IIMA)<br>
+                    IIM Bangalore (IIMB)<br>
+                    IIM Calcutta (IIMC)<br>
+                    IIM Lucknow (IIML)<br>
+                    IIM Kozhikode (IIMK)<br>
+                    IIM Indore (IIMI)<br>
+                    </p>
+                    <a href="" class="visit-link">Visit us to know more</a>
+                </div>
+        </section>
+        
+        <section class="iims">
+            <h1> What are IIMs ?</h1>
+            <p> The Indian Institutes of Management (IIMs) are India's premier business schools, known for their rigorous academics and excellent placement opportunities. Leading IIMs like Ahmedabad (IIMA), Bangalore (IIMB), and Calcutta (IIMC) are globally renowned for their distinguished faculty and strong alumni networks. They use diverse teaching methods, including the case study approach, and maintain strong industry ties. Other notable IIMs such as Lucknow (IIML), Kozhikode (IIMK), and Indore (IIMI) are also gaining recognition for their innovative programs and growing influence in management education. </p>
+            <div class="rows">
+                <div class="iimabc">
+                    <h3>IIMA</h3>
+                    <p>IIM Ahmedabad (IIMA) is India's leading business school, renowned globally for its rigorous academic programs and exceptional faculty. It is famous for using the case study method and has a strong alumni network that ensures excellent career opportunities for its graduates. IIMA's emphasis on leadership and innovation makes it a top choice for aspiring business leaders.</p>
+                </div>
+                <div class="iimabc">
+                    <h3>IIMB</h3>
+                    <p>IIM Bangalore (IIMB) is one of India's leading business schools, known for its strong emphasis on research, entrepreneurship, and innovation. It boasts a distinguished faculty, a diverse student body, and robust industry connections, ensuring excellent placement opportunities. IIMB's vibrant campus and strategic location in Bangalore enhance its appeal as a top choice for management education.</p>
+                </div>
+                <div class="iimabc">
+                    <h3>IIMC</h3>
+                    <p>IIM Calcutta (IIMC) is one of India's top business schools, renowned for its rigorous academic programs and strong emphasis on analytical and quantitative skills. Established in 1961, it offers a variety of postgraduate and doctoral programs in management and maintains robust industry connections, facilitating excellent placement opportunities for its graduates. IIMC is also noted for its distinguished faculty and extensive alumni network.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="whymba">
+            <h1>Why MBA ?</h1>
+            <p>Pursuing a Master of Business Administration (MBA) can be a transformative step for both personal and professional development. An MBA provides comprehensive training in essential business disciplines such as finance, marketing, operations, and strategic management, equipping graduates with a versatile skill set applicable across various industries. The program fosters critical thinking, leadership, and decision-making abilities, which are crucial for navigating complex business environments. Additionally, the diverse cohort of peers, extensive alumni networks, and access to industry connections offered by MBA programs create invaluable opportunities for networking and mentorship. This combination of rigorous academic training, practical experience, and professional networking positions MBA graduates for accelerated career growth, leadership roles, and entrepreneurial ventures.</p>
+            <div class="rows">
+                <div class="iimpics">
+                    <img src="images/iima.webp">
+                    <div class="iimabcpics">
+                        <h3>IIMA</h3>
+                    </div>
+                </div>
+                <div class="iimpics">
+                    <img src="images/iimb.jpeg">
+                    <div class="iimabcpics">
+                        <h3>IIMB</h3>
+                    </div>
+                </div>
+                <div class="iimpics">
+                    <img src="images/iimc.webp">
+                    <div class="iimabcpics">
+                        <h3>IIMC</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="cat">
+            <h1>How to crack CAT Exam?</h1>
+            <p>Cracking the CAT (Common Admission Test) requires a strategic and disciplined approach. Begin by understanding the exam pattern and syllabus thoroughly. Create a study plan that allocates ample time for each section: Quantitative Ability, Verbal Ability and Reading Comprehension, and Data Interpretation and Logical Reasoning. Focus on strengthening your basics through standard study materials and practice consistently with mock tests to improve speed and accuracy. Analyze your performance in these tests to identify and work on weak areas. Time management is crucial, so develop techniques to handle pressure and efficiently allocate time during the exam. Additionally, maintain a healthy lifestyle with balanced nutrition and adequate rest to ensure peak mental performance.</p>
+            <div class="rows">
+                <div class="catsection">
+                    <img src="images/varc.png">
+                    <div class="sub"><h3>VARC</h3>
+                    <p>VARC stands for Verbal Ability and Reading Comprehension, a section in the CAT exam. It assesses candidates' proficiency in English, including grammar, vocabulary, sentence correction, and their ability to understand and interpret written passages.</p></div>
+                </div>
+                <div class="catsection">
+                    <img src="images/dilr.png">
+                    <div class="sub"><h3>DILR</h3>
+                    <p>DILR stands for Data Interpretation and Logical Reasoning, a section in the CAT exam. It evaluates candidates' abilities to interpret data from various sources like charts, graphs, and tables, and to solve logical puzzles and reasoning problems efficiently.</p></div>
+                </div>
+                <div class="catsection">
+                    <img src="images/quant.webp">
+                    <div class="sub"><h3>QUANT</h3>
+                    <p>Quant refers to the Quantitative Ability section in the CAT exam. It tests candidates' proficiency in mathematical concepts such as arithmetic, algebra, geometry, and number theory. The section assesses problem-solving abilities, quantitative analysis, and mathematical reasoning skills.</p></div>
+                </div>
+            </div>    
+        </section>
+        
+        <section class="authenticity">
+            <h1>Authenticity</h1>
+            <p>Our website prioritizes your security and privacy. We implement robust authentication measures and adhere to industry standards to ensure your data remains safe.</p>
+            <div class="rows">
+                <div class="authenticity-col">
+                    <img src="images/raghu.png">
+                    <div>
+                        <p>As a seasoned entrepreneur, I pride myself on delivering authentic products that reflect my values of honesty and quality. Each creation is a testament to my commitment to authenticity in business.</p>
+                        <h1>Raghuram Rajan</h1>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star-half" ></i> <!--empty-star-->
+                    </div>
+                </div>
+                <div class="authenticity-col">
+                    <img src="images/sachin.jpg">
+                    <div>
+                        <p>Our company’s mission centers on transparency and integrity. We uphold authenticity by fostering genuine connections with our customers and delivering on our promises with unwavering honesty.</p>
+                        <h1>Sachin Bansal</h1>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star" ></i>
+                        <i class="fa fa-star-o" ></i>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+        
+        <!--JavaScript for Toggle Menu-->
+        <script>
+            var navLinks=document.getElementById("navLinks")
+            
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+    </body>
+</html>

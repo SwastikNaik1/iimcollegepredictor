@@ -1,0 +1,327 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* the below is the 'google font' code */
+    font-family: "Poppins", sans-serif;
+}
+.header{ /*thisis to style the head*/
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/chooseMBAclg.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+nav{ /*to set teh overall nav without internal chnage, the position of block nav just changes*/
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{ /*to adjust the logo to size of the nav block*/
+    width: 150px;
+}
+.nav-links{ /*each nav links individually formatted (inside of the block*/
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{ /*an inline internal formatting of the list items*/
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{ /*to change the color and size of the link in the nav*/
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{ /*jab cusor ko nagiation pe leke jayenge toh uske neech ek line ayega isliye ye block and next block kof code likha hai*/
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #F44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+/* The '.' before text-box indicates that text-box is a class. Without the dot, CSS would look for an element named <text-box>, which is not what you want.*/
+.text-box{
+    width: 90%; /*sets the element's width to 90% of its containing block.*/
+    color: white;
+    position: absolute;
+    top: 50%; /*moves the element to the center of its containing block.*/
+    left: 50%;
+    transform: translate(-50%,-50%); /*further centers the element by adjusting its position by 50% of its own width and height.*/
+    text-align: center;
+}
+.text-box h1{ 
+    font-size: 80px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+}
+.visit-link{ /* jis bhi particular cheez me kuch editing karni ho uske 'class' ko kuch naam dedo aur phir css me format karo */
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 12px;
+    background: transparent;
+    position: relative;
+    cursor: center;
+    color: white;
+}
+.visit-link:hover{
+    border: 1px solid #F44336;
+    background: #F44336;
+    transition: 1s;
+}
+nav .fa{ /* jo cross and bars use kiya hai <700 display me wo phone pe nhi ayega */
+    display: none;
+}
+
+@media(max-width: 700px){ /* when max width of the device is 700px--Mobile Phones */
+    .text-box h1{ 
+        font-size: 25px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #F44336;
+        height: 100vh; /*'vh' is 'viewport height', is equal to 1% of the height of the browser window */
+        width: 200px;
+        top: 0;
+        right: -200px; /* width is 200px & to hide the menu right is said to -200px */
+        text-align: left;
+        transition: 1s;
+        z-index: 2; /* gives the stack order of positioned elements */ 
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+}
+}
+
+/*iims*/
+.iims{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;  
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+
+}
+p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.rows{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.iimabc{
+    flex-basis: 30%;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.iimabc:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width: 700px){
+    .rows{
+        flex-direction: column;
+    }
+}
+/* whymba */
+.whymba{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.rows{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.iimpics{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.iimpics img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+.iimpics img:hover{
+    box-shadow: 0 0 20px 0px;
+    background-color: black;
+    opacity: 100;
+}
+.iimabcpics{
+    color: white;
+    text-shadow: -1px -1px 0 black,  1px -1px 0 black,-1px 1px 0 black,1px 1px 0 black;
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.iimabcpics:hover{
+    background: black;   
+    opacity: 0.8;
+}
+@media(max-width: 700px){
+    .iimpics{
+        width: 100%;
+        height: 100vh; /* Full viewport height, adjust as needed */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .iimpics img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+.iimabcpics h3{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.iimabcpics:hover h3{
+    bottom: 40%;
+    opacity: 1;
+}  
+
+/*cat*/
+.cat{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.catsection{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.catsection img{
+    width: auto;
+    height: 100px;
+    border-radius: 10px;
+}
+.catsection p{
+    padding: 0;
+}
+.catsection h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.authenticity{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.authenticity-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 40%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: black;
+    color: white;
+    padding: 25px;
+    cursor: pointer;
+}
+.authenticity-col img{
+    height: 100px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%; /*image becomes circular*/    
+}
+.authenticity-col p{
+    margin-top: 15px;
+    padding:0;
+}
+.authenticity-col h1{
+    margin-top: 15px;
+    text-align: left;
+}
+.authenticity-col .fa{
+    color: #F44336;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
